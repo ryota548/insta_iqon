@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FA32FFA1B60673B00BAED64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA32FF91B60673B00BAED64 /* AppDelegate.swift */; };
+		6FA32FFD1B60673B00BAED64 /* insta_iqon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FA32FFB1B60673B00BAED64 /* insta_iqon.xcdatamodeld */; };
+		6FA32FFF1B60673B00BAED64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA32FFE1B60673B00BAED64 /* ViewController.swift */; };
+		6FA330021B60673B00BAED64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FA330001B60673B00BAED64 /* Main.storyboard */; };
+		6FA330041B60673B00BAED64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FA330031B60673B00BAED64 /* Images.xcassets */; };
+		6FA330071B60673B00BAED64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FA330051B60673B00BAED64 /* LaunchScreen.xib */; };
+		6FA330131B60673B00BAED64 /* insta_iqonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA330121B60673B00BAED64 /* insta_iqonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FA3300D1B60673B00BAED64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FA32FEC1B60673B00BAED64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FA32FF31B60673B00BAED64;
+			remoteInfo = insta_iqon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6FA32FF41B60673B00BAED64 /* insta_iqon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = insta_iqon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA32FF81B60673B00BAED64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA32FF91B60673B00BAED64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FA32FFC1B60673B00BAED64 /* insta_iqon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = insta_iqon.xcdatamodel; sourceTree = "<group>"; };
+		6FA32FFE1B60673B00BAED64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FA330011B60673B00BAED64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FA330031B60673B00BAED64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6FA330061B60673B00BAED64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6FA3300C1B60673B00BAED64 /* insta_iqonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = insta_iqonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FA330111B60673B00BAED64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FA330121B60673B00BAED64 /* insta_iqonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insta_iqonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FA32FF11B60673B00BAED64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA330091B60673B00BAED64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FA32FEB1B60673B00BAED64 = {
+			isa = PBXGroup;
+			children = (
+				6FA32FF61B60673B00BAED64 /* insta_iqon */,
+				6FA3300F1B60673B00BAED64 /* insta_iqonTests */,
+				6FA32FF51B60673B00BAED64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FA32FF51B60673B00BAED64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FA32FF41B60673B00BAED64 /* insta_iqon.app */,
+				6FA3300C1B60673B00BAED64 /* insta_iqonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FA32FF61B60673B00BAED64 /* insta_iqon */ = {
+			isa = PBXGroup;
+			children = (
+				6FA32FF91B60673B00BAED64 /* AppDelegate.swift */,
+				6FA32FFE1B60673B00BAED64 /* ViewController.swift */,
+				6FA330001B60673B00BAED64 /* Main.storyboard */,
+				6FA330031B60673B00BAED64 /* Images.xcassets */,
+				6FA330051B60673B00BAED64 /* LaunchScreen.xib */,
+				6FA32FFB1B60673B00BAED64 /* insta_iqon.xcdatamodeld */,
+				6FA32FF71B60673B00BAED64 /* Supporting Files */,
+			);
+			path = insta_iqon;
+			sourceTree = "<group>";
+		};
+		6FA32FF71B60673B00BAED64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FA32FF81B60673B00BAED64 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FA3300F1B60673B00BAED64 /* insta_iqonTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FA330121B60673B00BAED64 /* insta_iqonTests.swift */,
+				6FA330101B60673B00BAED64 /* Supporting Files */,
+			);
+			path = insta_iqonTests;
+			sourceTree = "<group>";
+		};
+		6FA330101B60673B00BAED64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FA330111B60673B00BAED64 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FA32FF31B60673B00BAED64 /* insta_iqon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FA330161B60673B00BAED64 /* Build configuration list for PBXNativeTarget "insta_iqon" */;
+			buildPhases = (
+				6FA32FF01B60673B00BAED64 /* Sources */,
+				6FA32FF11B60673B00BAED64 /* Frameworks */,
+				6FA32FF21B60673B00BAED64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = insta_iqon;
+			productName = insta_iqon;
+			productReference = 6FA32FF41B60673B00BAED64 /* insta_iqon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FA3300B1B60673B00BAED64 /* insta_iqonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FA330191B60673B00BAED64 /* Build configuration list for PBXNativeTarget "insta_iqonTests" */;
+			buildPhases = (
+				6FA330081B60673B00BAED64 /* Sources */,
+				6FA330091B60673B00BAED64 /* Frameworks */,
+				6FA3300A1B60673B00BAED64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FA3300E1B60673B00BAED64 /* PBXTargetDependency */,
+			);
+			name = insta_iqonTests;
+			productName = insta_iqonTests;
+			productReference = 6FA3300C1B60673B00BAED64 /* insta_iqonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FA32FEC1B60673B00BAED64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "ryota-ko";
+				TargetAttributes = {
+					6FA32FF31B60673B00BAED64 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6FA3300B1B60673B00BAED64 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6FA32FF31B60673B00BAED64;
+					};
+				};
+			};
+			buildConfigurationList = 6FA32FEF1B60673B00BAED64 /* Build configuration list for PBXProject "insta_iqon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FA32FEB1B60673B00BAED64;
+			productRefGroup = 6FA32FF51B60673B00BAED64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FA32FF31B60673B00BAED64 /* insta_iqon */,
+				6FA3300B1B60673B00BAED64 /* insta_iqonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FA32FF21B60673B00BAED64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA330021B60673B00BAED64 /* Main.storyboard in Resources */,
+				6FA330071B60673B00BAED64 /* LaunchScreen.xib in Resources */,
+				6FA330041B60673B00BAED64 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA3300A1B60673B00BAED64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FA32FF01B60673B00BAED64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA32FFF1B60673B00BAED64 /* ViewController.swift in Sources */,
+				6FA32FFD1B60673B00BAED64 /* insta_iqon.xcdatamodeld in Sources */,
+				6FA32FFA1B60673B00BAED64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA330081B60673B00BAED64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA330131B60673B00BAED64 /* insta_iqonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FA3300E1B60673B00BAED64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FA32FF31B60673B00BAED64 /* insta_iqon */;
+			targetProxy = 6FA3300D1B60673B00BAED64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FA330001B60673B00BAED64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FA330011B60673B00BAED64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FA330051B60673B00BAED64 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FA330061B60673B00BAED64 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FA330141B60673B00BAED64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FA330151B60673B00BAED64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FA330171B60673B00BAED64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = insta_iqon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6FA330181B60673B00BAED64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = insta_iqon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6FA3301A1B60673B00BAED64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = insta_iqonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/insta_iqon.app/insta_iqon";
+			};
+			name = Debug;
+		};
+		6FA3301B1B60673B00BAED64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = insta_iqonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/insta_iqon.app/insta_iqon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FA32FEF1B60673B00BAED64 /* Build configuration list for PBXProject "insta_iqon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA330141B60673B00BAED64 /* Debug */,
+				6FA330151B60673B00BAED64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FA330161B60673B00BAED64 /* Build configuration list for PBXNativeTarget "insta_iqon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA330171B60673B00BAED64 /* Debug */,
+				6FA330181B60673B00BAED64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6FA330191B60673B00BAED64 /* Build configuration list for PBXNativeTarget "insta_iqonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FA3301A1B60673B00BAED64 /* Debug */,
+				6FA3301B1B60673B00BAED64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6FA32FFB1B60673B00BAED64 /* insta_iqon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6FA32FFC1B60673B00BAED64 /* insta_iqon.xcdatamodel */,
+			);
+			currentVersion = 6FA32FFC1B60673B00BAED64 /* insta_iqon.xcdatamodel */;
+			path = insta_iqon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6FA32FEC1B60673B00BAED64 /* Project object */;
+}
