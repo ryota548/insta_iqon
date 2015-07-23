@@ -9,8 +9,12 @@
 import UIKit
 import SwiftyJSON
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+    
+    var itemCount = 0
+    var photos :[String] = []
+    @IBOutlet var collectionView :UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,10 +40,52 @@ class ViewController: UIViewController {
     
     func response(res: NSURLResponse!, data: NSData!, error: NSError!){
         
-        // Dictionary
         let json = JSON(data: data)
-        var title = json["data"][0]["link"].string
-        println(title!)
+        
+        itemCount = json["data"].count
+        
+        for i in 0..<itemCount{
+            var imageUrl = json["data"][i]["link"].string
+            photos.append(imageUrl!)
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.collectionView.reloadData()
+        })
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return self.photos.count
+    }
+    
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int{
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
+        
+        let cell :CollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CollectionViewCell
+        
+        var imageString : String = photos[indexPath.row] as String
+        
+        cell.imageView.image = nil
+        
+        var q_global: dispatch_queue_t = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        var q_main: dispatch_queue_t  = dispatch_get_main_queue();
+        
+        dispatch_async(q_global, {
+            var imageURL: NSURL = NSURL(string: imageString)!
+            var imageData: NSData = NSData(contentsOfURL: imageURL)!
+            
+            var image = UIImage(data: imageData)
+            
+            dispatch_async(q_main, {
+                cell.imageView.image = image
+                cell.layoutSubviews()
+            })
+        })
+        return cell
     }
 
 }
