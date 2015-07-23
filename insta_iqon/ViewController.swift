@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -35,10 +36,10 @@ class ViewController: UIViewController {
     
     func response(res: NSURLResponse!, data: NSData!, error: NSError!){
         
-        // responseをjsonに変換
-        var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: nil) as! NSDictionary
-        println(json)
-        
+        // Dictionary
+        let json = JSON(data: data)
+        var title = json["data"][0]["link"].string
+        println(title!)
     }
 
 }
