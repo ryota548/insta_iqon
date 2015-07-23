@@ -88,13 +88,19 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         })
         return cell
     }
-
     func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize
     {
         var itemSize : CGSize
-        itemSize = (indexPath.item%3 == 1) ? CGSizeMake(106, 106) : CGSizeMake(107, 106)
-        
+        let myBoundSize: CGSize = UIScreen.mainScreen().bounds.size
+        itemSize = CGSizeMake((myBoundSize.width)/3, (myBoundSize.width)/3)
         return itemSize
     }
+    /*
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        println("下まできたよー！")
+        var footer : MySupplementaryView? = nil
+        return footer!
+    }
+    */
 }
 
