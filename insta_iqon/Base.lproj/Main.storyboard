@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,29 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gUu-eY-Ujx">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gUu-eY-Ujx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kru-4A-kfD">
-                                    <size key="itemSize" width="193" height="202"/>
+                                    <size key="itemSize" width="250" height="250"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="rYi-YQ-AUh" customClass="CollectionViewCell" customModule="insta_iqon" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" reuseIdentifier="Cell" id="rYi-YQ-AUh" customClass="CollectionViewCell" customModule="insta_iqon" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="193" height="202"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ogi-pk-Ivp">
-                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="202"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ogi-pk-Ivp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="Ogi-pk-Ivp" firstAttribute="top" secondItem="rYi-YQ-AUh" secondAttribute="topMargin" id="6kP-hi-eOI"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Ogi-pk-Ivp" secondAttribute="bottom" id="S4v-55-6Ct"/>
+                                            <constraint firstItem="Ogi-pk-Ivp" firstAttribute="leading" secondItem="rYi-YQ-AUh" secondAttribute="leadingMargin" id="Wo0-xW-V5L"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Ogi-pk-Ivp" secondAttribute="trailing" id="pse-c4-eCl"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="Ogi-pk-Ivp" id="juL-oP-2cl"/>
                                         </connections>
@@ -51,9 +58,23 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gUu-eY-Ujx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0Nc-04-SA2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gUu-eY-Ujx" secondAttribute="trailing" constant="-16" id="MDf-vd-xmq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gUu-eY-Ujx" secondAttribute="trailing" id="UAh-Gf-THk"/>
+                            <constraint firstItem="gUu-eY-Ujx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="ex9-mc-SYw"/>
+                            <constraint firstItem="gUu-eY-Ujx" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="g7F-wn-Dra"/>
+                            <constraint firstItem="gUu-eY-Ujx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="rc3-wh-fAv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Nc-04-SA2"/>
+                                <exclude reference="UAh-Gf-THk"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="gUu-eY-Ujx" id="seH-uf-gGb"/>
+                        <outlet property="collectionView" destination="gUu-eY-Ujx" id="3hB-tn-yUI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

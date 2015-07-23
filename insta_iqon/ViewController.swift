@@ -41,11 +41,11 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
     func response(res: NSURLResponse!, data: NSData!, error: NSError!){
         
         let json = JSON(data: data)
-        
+        println(json)
         itemCount = json["data"].count
         
         for i in 0..<itemCount{
-            var imageUrl = json["data"][i]["link"].string
+            var imageUrl = json["data"][i]["images"]["low_resolution"]["url"].string
             photos.append(imageUrl!)
         }
         
@@ -67,7 +67,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         
         let cell :CollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CollectionViewCell
         
-        var imageString : String = photos[indexPath.row] as String
+        var imageString : String = photos[indexPath.item] as String
         
         cell.imageView.image = nil
         
@@ -76,6 +76,7 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         
         dispatch_async(q_global, {
             var imageURL: NSURL = NSURL(string: imageString)!
+            
             var imageData: NSData = NSData(contentsOfURL: imageURL)!
             
             var image = UIImage(data: imageData)
@@ -88,5 +89,12 @@ class ViewController: UIViewController,UICollectionViewDataSource,UICollectionVi
         return cell
     }
 
+    func collectionView(collectionView: UICollectionView!, layout collectionViewLayout: UICollectionViewLayout!, sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize
+    {
+        var itemSize : CGSize
+        itemSize = (indexPath.item%3 == 1) ? CGSizeMake(106, 106) : CGSizeMake(107, 106)
+        
+        return itemSize
+    }
 }
 
